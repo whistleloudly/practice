@@ -5,5 +5,7 @@ print(html)
 
 import re
 res = re.findall(r"<title>(.+?)</title>",html)
-print("Page title is:",res[0])
+print("\nPage title is:",res[0])
 
+res = re.findall(r"<p>(.+?)</p>",html,flags=re.DOTALL)
+print("\nPage paragraph is:", res[0])
