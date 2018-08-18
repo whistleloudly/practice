@@ -9,3 +9,6 @@ print("\nPage title is:",res[0])
 
 res = re.findall(r"<p>(.+?)</p>",html,flags=re.DOTALL)
 print("\nPage paragraph is:", res[0])
+
+res = re.findall(r'href="(.*?)"',html)
+print("\nAll links:",res)
